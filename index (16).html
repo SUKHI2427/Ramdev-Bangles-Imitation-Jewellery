@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramdev Bangles &amp; Imitation Jewellery — JP Nagar 7th Phase, Bengaluru</title>
+<meta name="description" content="South Bengaluru's premier bridal jewellery rental and imitation jewellery showroom. Micro gold-plated bangles, glass chooriyan, temple kadas, kundan chokers &amp; bridal sets on rent near Big Bazaar, Kothanur Dinne Main Road, JP Nagar 7th Phase.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Medium Dark Jewel Tones */
+  --wine-dark: #1F070B;
+  --wine-base: #2E0B12;
+  --wine-mid: #45121D;
+  --wine-soft: #5E1A27;
+  --rosewood: #3A1017;
+  
+  /* Light Luxury Tones */
+  --light-pearl: #FAF6F0;
+  --light-cream: #F5EFE6;
+  --light-silk: #FFFDF9;
+  --blush-mist: #F7EAE5;
+  --blush-card: #FBEFE9;
+  
+  /* Luminous Gold & Metallic Tones */
+  --gold-pure: #D4AF37;
+  --gold-light: #F7DF94;
+  --gold-glow: #F3C64F;
+  --gold-deep: #AA8222;
+  --gold-border: rgba(212, 175, 55, 0.45);
+  --gold-subtle: rgba(212, 175, 55, 0.18);
+  
+  /* Typography & Accents */
+  --text-dark: #2B0D13;
+  --text-muted-dark: #6B4E54;
+  --text-light: #FAF5EF;
+  --text-muted-light: #E8D0C9;
+  --rose-accent: #D86B67;
+  
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --shadow-gold: 0 14px 40px rgba(212, 175, 55, 0.16);
+  --shadow-deep: 0 20px 50px rgba(31, 7, 11, 0.45);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background-color: var(--wine-base);
+  color: var(--text-light);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; object-fit: cover; }
+button { font-family: inherit; cursor: pointer; border: none; outline: none; background: none; }
+
+/* Progress Bar */
+#scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold-deep), var(--gold-glow), var(--gold-light));
+  z-index: 100;
+  box-shadow: 0 0 10px var(--gold-glow);
+}
+
+/* Base Layout Containers */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Typography Helpers */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.eyebrow-gold { color: var(--gold-glow); }
+.eyebrow-wine { color: var(--rose-accent); }
+
+.sec-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.sec-title-light { color: var(--text-light); }
+.sec-title-dark { color: var(--text-dark); }
+
+.sec-desc {
+  font-size: 1.08rem;
+  max-width: 660px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.sec-desc-light { color: var(--text-muted-light); }
+.sec-desc-dark { color: var(--text-muted-dark); }
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  padding: 18px 0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+nav.scrolled {
+  background: rgba(31, 7, 11, 0.94);
+  backdrop-filter: blur(14px);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gold-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, var(--gold-light), var(--gold-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.4);
+  color: var(--wine-dark);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.brand-text h1 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--light-silk);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.brand-text span {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  display: block;
+}
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+.nav-links a {
+  color: var(--text-muted-light);
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a:hover {
+  color: var(--gold-glow);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-glow), var(--gold-pure) 55%, var(--gold-deep));
+  color: #1a0508;
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.35);
+  border: 1px solid rgba(255, 240, 180, 0.6);
+}
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(243, 198, 79, 0.55);
+  background: linear-gradient(135deg, #fff2be, var(--gold-glow) 55%, var(--gold-pure));
+}
+.btn-outline-gold {
+  background: transparent;
+  color: var(--gold-light);
+  border: 1.5px solid var(--gold-border);
+}
+.btn-outline-gold:hover {
+  background: var(--gold-subtle);
+  border-color: var(--gold-light);
+  color: var(--light-silk);
+  transform: translateY(-2px);
+}
+.btn-wine {
+  background: var(--wine-soft);
+  color: var(--light-pearl);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.btn-wine:hover {
+  background: var(--wine-mid);
+  border-color: var(--gold-glow);
+  color: var(--gold-light);
+}
+
+/* 1. HERO SECTION */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 140px;
+  padding-bottom: 90px;
+  background: radial-gradient(ellipse at 50% 25%, #591624 0%, var(--wine-base) 50%, var(--wine-dark) 90%);
+}
+.hero-rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid var(--gold-border);
+  opacity: 0.4;
+  animation: rotateRing 60s linear infinite;
+}
+.hero-ring:nth-child(1) { width: 500px; height: 500px; border-style: dashed; }
+.hero-ring:nth-child(2) { width: 850px; height: 850px; animation-duration: 90s; animation-direction: reverse; }
+.hero-ring:nth-child(3) { width: 1200px; height: 1200px; opacity: 0.18; border-color: var(--gold-glow); }
+@keyframes rotateRing {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--gold-border);
+  border-radius: 40px;
+  padding: 8px 22px;
+  font-size: 0.88rem;
+  color: var(--gold-light);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 10px #34d399;
+  display: inline-block;
+  animation: pulseDot 2s infinite;
+}
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 7.5vw, 6.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #FFE89E 0%, #D4AF37 30%, #FFF4D0 50%, #C39226 70%, #FFF0BA 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shineGold 6s linear infinite;
+  text-shadow: 0 0 35px rgba(212, 175, 55, 0.35);
+  letter-spacing: -0.01em;
+}
+@keyframes shineGold {
+  to { background-position: 200% center; }
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: var(--text-muted-light);
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+.hero-desc {
+  font-size: 1.14rem;
+  color: var(--text-muted-light);
+  max-width: 680px;
+  margin: 0 auto 36px;
+  line-height: 1.75;
+  font-weight: 300;
+}
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+.hero-feat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--gold-light);
+}
+
+/* Floating Golden Sparks */
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--gold-light);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--gold-glow);
+  pointer-events: none;
+  opacity: 0;
+  animation: floatSparkle linear infinite;
+}
+@keyframes floatSparkle {
+  0% { opacity: 0; transform: translateY(0) scale(0.3); }
+  25% { opacity: 0.9; }
+  80% { opacity: 0.9; }
+  100% { opacity: 0; transform: translateY(-110vh) scale(1.2); }
+}
+
+/* 2. TICKER MARQUEE */
+.marquee-bar {
+  background: var(--wine-mid);
+  border-top: 1px solid var(--gold-border);
+  border-bottom: 1px solid var(--gold-border);
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+  animation: marqueeScroll 32s linear infinite;
+  white-space: nowrap;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--gold-light);
+}
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+.marquee-star {
+  color: var(--gold-pure);
+  font-size: 1rem;
+}
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* 3. STORY SECTION - MEDIUM DARK & LIGHT PEARL CONTRAST */
+#story {
+  background: var(--wine-base);
+  position: relative;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.story-visual-wrap {
+  position: relative;
+}
+.story-image-card {
+  position: relative;
+  border-radius: 200px 200px 24px 24px;
+  overflow: hidden;
+  border: 2px solid var(--gold-pure);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 40px rgba(212, 175, 55, 0.2);
+  aspect-ratio: 4/5;
+  background: var(--wine-dark);
+}
+.story-image-card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+.story-image-card:hover img {
+  transform: scale(1.05);
+}
+.story-badge-box {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(31, 7, 11, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--gold-pure);
+  border-radius: 40px;
+  padding: 10px 24px;
+  white-space: nowrap;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.story-badge-box b {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold-glow);
+  display: block;
+}
+.story-badge-box span {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light-silk);
+}
+.story-card-light {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-deep);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  position: relative;
+}
+.story-card-light h3 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--wine-dark);
+}
+.story-card-light p {
+  color: var(--text-muted-dark);
+  font-size: 1.04rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+.story-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(107, 78, 84, 0.2);
+}
+.highlight-pill {
+  background: var(--blush-mist);
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--gold-pure);
+}
+.highlight-pill strong {
+  display: block;
+  font-size: 0.98rem;
+  color: var(--wine-dark);
+}
+.highlight-pill span {
+  font-size: 0.82rem;
+  color: var(--text-muted-dark);
+}
+
+/* 4. AISLES GALLERY (8 AISLES WITH REAL PHOTOS) */
+#aisles {
+  background: var(--wine-dark);
+  position: relative;
+}
+.aisles-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.aisles-header .sec-desc {
+  margin: 0 auto;
+}
+
+/* Category Filter Tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 36px 0 44px;
+}
+.tab-btn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--text-muted-light);
+  transition: all 0.3s;
+}
+.tab-btn:hover, .tab-btn.active {
+  background: var(--gold-glow);
+  color: var(--wine-dark);
+  border-color: var(--gold-glow);
+  box-shadow: 0 4px 18px rgba(243, 198, 79, 0.35);
+  transform: translateY(-2px);
+}
+
+/* 8 Aisles Grid */
+.aisles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.aisle-card {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  cursor: pointer;
+}
+.aisle-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold-pure);
+  box-shadow: 0 24px 50px rgba(0,0,0,0.5), 0 0 30px rgba(212, 175, 55, 0.3);
+}
+.aisle-img-wrap {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: #111;
+}
+.aisle-img-wrap img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+.aisle-card:hover .aisle-img-wrap img {
+  transform: scale(1.08);
+}
+.aisle-tag-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(43, 13, 19, 0.9);
+  backdrop-filter: blur(8px);
+  color: var(--gold-light);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--gold-border);
+}
+.aisle-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(31, 7, 11, 0.7) 100%);
+  opacity: 0.7;
+}
+.zoom-hint {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--wine-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s;
+}
+.aisle-card:hover .zoom-hint {
+  opacity: 1;
+  transform: scale(1);
+}
+.aisle-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  background: var(--light-pearl);
+}
+.aisle-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--wine-dark);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.aisle-content p {
+  color: var(--text-muted-dark);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+.aisle-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid rgba(107, 78, 84, 0.15);
+}
+.aisle-footer-tag {
+  font-size: 0.78rem;
+  color: var(--rose-accent);
+  font-weight: 600;
+}
+.aisle-btn-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-deep);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.aisle-btn-link:hover {
+  color: var(--wine-base);
+}
+
+/* 5. INTERACTIVE BANGLE SIZER & FIT FINDER (LIGHT PEARL CARD) */
+#bangle-sizer {
+  background: var(--wine-base);
+  padding: 90px 0;
+}
+.sizer-wrapper {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--gold-pure);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+.sizer-content {
+  padding: 48px;
+}
+.sizer-content h3 {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--wine-dark);
+  margin-bottom: 12px;
+}
+.sizer-content p {
+  color: var(--text-muted-dark);
+  font-size: 0.98rem;
+  margin-bottom: 28px;
+}
+.slider-control-group {
+  margin-bottom: 30px;
+}
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--wine-dark);
+}
+.slider-value-badge {
+  background: var(--wine-soft);
+  color: var(--gold-light);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.range-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #E8DCDB;
+  outline: none;
+  accent-color: var(--gold-pure);
+  cursor: pointer;
+}
+.size-selector-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.size-chip {
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: #F0E6E2;
+  border: 1px solid rgba(107, 78, 84, 0.2);
+  color: var(--wine-dark);
+  transition: all 0.25s;
+}
+.size-chip.active {
+  background: var(--wine-dark);
+  color: var(--gold-light);
+  border-color: var(--gold-pure);
+  box-shadow: 0 4px 14px rgba(43, 13, 19, 0.25);
+}
+
+.sizer-display-side {
+  background: linear-gradient(135deg, var(--wine-mid), var(--wine-dark));
+  color: var(--text-light);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-left: 1px solid var(--gold-border);
+}
+.bangle-visual-ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid var(--gold-glow);
+  box-shadow: 0 0 30px rgba(243, 198, 79, 0.4), inset 0 0 20px rgba(243, 198, 79, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bangle-visual-ring::after {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border: 1px dashed var(--gold-border);
+  border-radius: 50%;
+  animation: rotateRing 25s linear infinite;
+}
+.ring-size-num {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+}
+.ring-size-label {
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted-light);
+}
+.size-specs-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+.size-spec-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.size-spec-row:last-child {
+  border-bottom: none;
+}
+.size-spec-row span { color: var(--text-muted-light); }
+.size-spec-row b { color: var(--gold-light); }
+
+/* 6. BRIDAL RENTAL CONCIERGE (MEDIUM DARK VELVET & GOLD) */
+#bridal-concierge {
+  background: radial-gradient(ellipse at 50% 30%, #4D1522 0%, var(--wine-base) 60%, var(--wine-dark) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.concierge-card {
+  background: rgba(31, 7, 11, 0.85);
+  backdrop-filter: blur(14px);
+  border: 1.5px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.concierge-text h3 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--light-silk);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.concierge-text p {
+  color: var(--text-muted-light);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+.concierge-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gold-glow);
+  color: var(--wine-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-info strong {
+  display: block;
+  font-size: 0.98rem;
+  color: var(--light-silk);
+}
+.step-info span {
+  font-size: 0.84rem;
+  color: var(--text-muted-light);
+}
+
+/* Concierge Interactive Planner */
+.planner-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 30px;
+}
+.planner-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold-light);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.planner-field {
+  margin-bottom: 20px;
+}
+.planner-field label {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted-light);
+  margin-bottom: 8px;
+}
+.planner-select {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--wine-dark);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  color: var(--light-silk);
+  font-family: inherit;
+  font-size: 0.94rem;
+  outline: none;
+}
+.planner-select:focus {
+  border-color: var(--gold-glow);
+}
+.estimate-badge {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px dashed var(--gold-pure);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.estimate-badge small {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted-light);
+}
+.estimate-badge b {
+  font-size: 1.15rem;
+  color: var(--gold-light);
+}
+
+/* 7. SHOWCASE TILES GRID */
+#showcase {
+  background: var(--light-cream);
+  color: var(--text-dark);
+}
+.showcase-header {
+  text-align: center;
+  margin-bottom: 54px;
+}
+.showcase-header .sec-desc {
+  margin: 0 auto;
+}
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.showcase-card {
+  background: var(--light-silk);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(43, 13, 19, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.4s ease;
+}
+.showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(43, 13, 19, 0.16);
+  border-color: var(--gold-pure);
+}
+.showcase-img {
+  aspect-ratio: 16/11;
+  overflow: hidden;
+  position: relative;
+}
+.showcase-img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+.showcase-card:hover .showcase-img img {
+  transform: scale(1.08);
+}
+.showcase-content {
+  padding: 26px;
+}
+.showcase-content h4 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--wine-dark);
+  margin-bottom: 8px;
+}
+.showcase-content p {
+  color: var(--text-muted-dark);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.showcase-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.showcase-tag {
+  background: var(--blush-mist);
+  color: var(--wine-base);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* 8. STATS SECTION */
+#stats {
+  background: linear-gradient(135deg, var(--wine-soft), #7E2032 50%, var(--wine-mid));
+  border-block: 1px solid var(--gold-border);
+  padding: 70px 0;
+  text-align: center;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stat-box b {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 8px;
+  text-shadow: 0 0 24px rgba(247, 223, 148, 0.45);
+}
+.stat-box span {
+  font-size: 0.95rem;
+  color: var(--blush-mist);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+/* 9. REVIEWS SECTION (LIGHT PEARL CARDS) */
+#reviews {
+  background: var(--wine-base);
+}
+.reviews-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.reviews-header .sec-desc {
+  margin: 0 auto;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+.review-card {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.35s ease;
+}
+.review-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-pure);
+}
+.review-stars {
+  color: var(--gold-pure);
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+.review-quote {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-style: italic;
+  color: var(--wine-dark);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+.reviewer-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(107, 78, 84, 0.15);
+}
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-pure);
+}
+.reviewer-info h5 {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--wine-dark);
+}
+.reviewer-info span {
+  font-size: 0.78rem;
+  color: var(--text-muted-dark);
+  display: block;
+}
+
+/* 10. JEWELLERY CARE & FAQ (ACCORDION) */
+#faq {
+  background: var(--wine-dark);
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item.active {
+  border-color: var(--gold-pure);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--light-silk);
+  text-align: left;
+}
+.faq-icon {
+  font-size: 1.2rem;
+  color: var(--gold-glow);
+  transition: transform 0.3s;
+}
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 24px;
+  color: var(--text-muted-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.faq-item.active .faq-answer {
+  max-height: 250px;
+  padding: 0 24px 20px 24px;
+}
+
+/* 11. VISIT & GOOGLE MAPS */
+#visit {
+  background: var(--wine-base);
+}
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+.visit-info-card {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  box-shadow: var(--shadow-deep);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.visit-info-card h3 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--wine-dark);
+  margin-bottom: 20px;
+}
+.store-details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.store-details-list li {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(107, 78, 84, 0.15);
+}
+.store-details-list li:last-child {
+  border-bottom: none;
+}
+.detail-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--blush-mist);
+  color: var(--rose-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.detail-text strong {
+  display: block;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--rose-accent);
+}
+.detail-text span {
+  font-size: 0.98rem;
+  color: var(--wine-dark);
+  font-weight: 500;
+}
+.map-embed-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--gold-pure);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  height: 440px;
+  position: relative;
+  background: var(--wine-dark);
+}
+.map-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 12. CONTACT & FOOTER */
+#contact {
+  background: radial-gradient(ellipse at 50% 100%, #571724 0%, var(--wine-base) 65%, var(--wine-dark) 100%);
+  text-align: center;
+  padding: 90px 0 100px;
+}
+.contact-phone-display {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 700;
+  color: var(--gold-light);
+  display: block;
+  margin: 16px 0 32px;
+  text-shadow: 0 0 30px rgba(247, 223, 148, 0.4);
+  transition: all 0.3s;
+}
+.contact-phone-display:hover {
+  color: #fff;
+  transform: scale(1.02);
+}
+.contact-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: #150407;
+  padding: 40px 0;
+  border-top: 1px solid var(--gold-border);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted-light);
+}
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+/* Floating Quick Contact Bar */
+.floating-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 85;
+}
+.float-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  font-size: 1.4rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.float-btn:hover {
+  transform: scale(1.12) translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+.float-call {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+.float-wa {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* Fullscreen Lightbox Modal */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(15, 3, 5, 0.94);
+  backdrop-filter: blur(16px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.lightbox-modal.active {
+  display: flex;
+}
+.lightbox-content {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  max-width: 600px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+  border: 2px solid var(--gold-pure);
+  animation: zoomModal 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes zoomModal {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.lightbox-img-wrap {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  position: relative;
+}
+.lightbox-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.lightbox-body {
+  padding: 28px;
+}
+.lightbox-body h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--wine-dark);
+  margin-bottom: 8px;
+}
+.lightbox-body p {
+  color: var(--text-muted-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.lightbox-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+/* Scroll Entrance Animations */
+.rv {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--delay, 0s);
+}
+.rv.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .aisles-grid { grid-template-columns: repeat(2, 1fr); }
+  .story-grid, .sizer-wrapper, .concierge-card, .faq-grid, .visit-grid { grid-template-columns: 1fr; gap: 36px; }
+  .sizer-display-side { border-left: none; border-top: 1px solid var(--gold-border); padding: 36px; }
+  .showcase-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .aisles-grid { grid-template-columns: 1fr; }
+  .showcase-grid, .reviews-grid { grid-template-columns: 1fr; }
+  .story-card-light { padding: 30px; }
+  .sizer-content { padding: 30px; }
+  .concierge-card { padding: 30px; }
+  .visit-info-card { padding: 30px; }
+  section { padding: 75px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="scroll-bar"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand">
+      <div class="brand-icon">✦</div>
+      <div class="brand-text">
+        <h1>Ramdev Bangles</h1>
+        <span>&amp; Imitation Jewellery</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#story">Our Story</a>
+      <a href="#aisles">The 8 Aisles</a>
+      <a href="#bangle-sizer">Size Finder</a>
+      <a href="#bridal-concierge">Bridal Rental</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Shop</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-gold" data-call>Call Store</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 1. HERO SECTION -->
+<section id="hero">
+  <div class="hero-rings">
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge rv">
+      <span class="status-dot"></span>
+      <span>Open Today 9:30 AM – 9:00 PM • JP Nagar 7th Phase, Bengaluru</span>
+    </div>
+    <h1 class="hero-title rv" style="--delay: 0.15s;">Ramdev Bangles</h1>
+    <div class="hero-subtitle rv" style="--delay: 0.25s;">&amp; Imitation Jewellery Showroom</div>
+    <p class="hero-desc rv" style="--delay: 0.35s;">
+      South Bengaluru's beloved destination for micro gold-plated bangles, wedding glass chooriyan, temple kadas, and exquisite bridal jewellery sets on rent. Step into a large superstore of sparkle near Big Bazaar, Kothanur Dinne Main Road.
+    </p>
+    <div class="hero-cta rv" style="--delay: 0.45s;">
+      <a href="#aisles" class="btn btn-gold">Browse the 8 Aisles</a>
+      <a href="#bridal-concierge" class="btn btn-outline-gold">Bridal Sets on Rent</a>
+      <a href="#bangle-sizer" class="btn btn-wine">Find Your Bangle Size</a>
+    </div>
+    <div class="hero-features rv" style="--delay: 0.55s;">
+      <div class="hero-feat-item"><span>✦</span> 14+ Years in JP Nagar</div>
+      <div class="hero-feat-item"><span>✦</span> 10,000+ Bangles in Stock</div>
+      <div class="hero-feat-item"><span>✦</span> Rental Suites for All Budgets</div>
+      <div class="hero-feat-item"><span>✦</span> Wholesale &amp; Retail Pricing</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. TICKER MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>Gold-Plated Bangles</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Bridal Jewellery Sets on Rent</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Glass Chooriyan &amp; Silk Sets</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Temple Kadas &amp; Cuffs</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Kundan Chokers &amp; Harams</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>South Indian Jhumkas</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Maang Tikka &amp; Hair Shringar</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Silver Payal &amp; Toe Rings</span><span class="marquee-star">✦</span></div>
+    <!-- repeat for seamless marquee -->
+    <div class="marquee-item"><span>Gold-Plated Bangles</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Bridal Jewellery Sets on Rent</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Glass Chooriyan &amp; Silk Sets</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Temple Kadas &amp; Cuffs</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Kundan Chokers &amp; Harams</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>South Indian Jhumkas</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Maang Tikka &amp; Hair Shringar</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Silver Payal &amp; Toe Rings</span><span class="marquee-star">✦</span></div>
+  </div>
+</div>
+
+<!-- 3. STORY SECTION -->
+<section id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-visual-wrap rv">
+        <div class="story-image-card">
+          <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=800&q=80" alt="Ramdev Bangles Showroom Counter JP Nagar" loading="lazy">
+          <div class="story-badge-box">
+            <b>Since 2011</b>
+            <span>14+ Years of Trust</span>
+          </div>
+        </div>
+      </div>
+      <div class="story-card-light rv" style="--delay: 0.2s;">
+        <span class="eyebrow eyebrow-wine">Our Heritage</span>
+        <h3>A Landmark Jewellery Destination in JP Nagar 7th Phase.</h3>
+        <p>
+          Established in 2011 on Kothanur Dinne Main Road, <strong>Ramdev Bangles &amp; Imitation Jewellery</strong> has blossomed into one of South Bengaluru's most trusted fashion jewelry superstores. For over fourteen years, we have adorned brides, college students, dance troupes, and families for their most treasured milestones.
+        </p>
+        <p>
+          What began as an intimate bangle counter has grown into an expansive showroom featuring eight dedicated aisles. Whether you are seeking micro gold-plated daily-wear kadas, hundreds of festival glass bangles, or full bridal temple jewellery suites on rent for weddings and receptions, our family is here to guide you with personal warmth and fair pricing.
+        </p>
+        <div class="story-highlights">
+          <div class="highlight-pill">
+            <strong>All Bangle Sizes Available</strong>
+            <span>From petite 2.2 to grand 2.10 sizes</span>
+          </div>
+          <div class="highlight-pill">
+            <strong>Affordable Bridal Rentals</strong>
+            <span>Royal designer look without gold locker stress</span>
+          </div>
+          <div class="highlight-pill">
+            <strong>Wholesale &amp; Retail Counter</strong>
+            <span>Bulk festival purchases &amp; family gift packs</span>
+          </div>
+          <div class="highlight-pill">
+            <strong>Custom Bangle Pairing</strong>
+            <span>Free colour-matching with your saree or lehenga</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. AISLES GALLERY (8 AISLES - REAL PHOTOS) -->
+<section id="aisles">
+  <div class="container">
+    <div class="aisles-header rv">
+      <span class="eyebrow eyebrow-gold">Store Department Tour</span>
+      <h2 class="sec-title sec-title-light">Walk the 8 Expansive Aisles</h2>
+      <p class="sec-desc sec-desc-light">
+        Every aisle in our JP Nagar showroom is thoughtfully curated with thousands of authentic designs. Click any card to zoom in and inquire directly with our store team.
+      </p>
+      
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All 8 Aisles</button>
+        <button class="tab-btn" data-filter="bangles">Bangles &amp; Kadas</button>
+        <button class="tab-btn" data-filter="bridal">Bridal Rentals</button>
+        <button class="tab-btn" data-filter="necklaces">Necklaces &amp; Chokers</button>
+        <button class="tab-btn" data-filter="accessories">Earrings &amp; Shringar</button>
+      </div>
+    </div>
+
+    <div class="aisles-grid" id="aisles-grid-container">
+      <!-- Cards rendered via JavaScript with real photos -->
+    </div>
+  </div>
+</section>
+
+<!-- 5. INTERACTIVE BANGLE SIZER & FIT GUIDE -->
+<section id="bangle-sizer">
+  <div class="container">
+    <div class="sizer-wrapper rv">
+      <div class="sizer-content">
+        <span class="eyebrow eyebrow-wine">Interactive Fitting Concierge</span>
+        <h3>Find Your Perfect Bangle Size</h3>
+        <p>
+          Not sure whether you need a 2.4, 2.6, or 2.8? Drag the wrist measurement slider or tap a standard Indian bangle size to see inner diameter, circumference, and tailored fit advice.
+        </p>
+        
+        <div class="slider-control-group">
+          <div class="slider-label">
+            <span>Wrist / Hand Circumference</span>
+            <span class="slider-value-badge" id="circumference-badge">6.3 inches (16.0 cm)</span>
+          </div>
+          <input type="range" min="5.2" max="7.3" step="0.1" value="6.3" class="range-slider" id="wrist-slider">
+        </div>
+
+        <div class="slider-label" style="margin-bottom: 8px;">
+          <span>Or Choose Standard Indian Size:</span>
+        </div>
+        <div class="size-selector-chips">
+          <button class="size-chip" data-size="2-2">Size 2.2 (Smallest)</button>
+          <button class="size-chip" data-size="2-4">Size 2.4 (Small)</button>
+          <button class="size-chip active" data-size="2-6">Size 2.6 (Medium - Most Popular)</button>
+          <button class="size-chip" data-size="2-8">Size 2.8 (Large)</button>
+          <button class="size-chip" data-size="2-10">Size 2.10 (Extra Large)</button>
+        </div>
+
+        <a href="#" class="btn btn-gold" id="sizer-wa-btn" target="_blank" rel="noopener">
+          <span>✦ Check Availability for Size <span id="size-btn-text">2.6</span> on WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="sizer-display-side">
+        <div class="bangle-visual-ring" id="bangle-ring">
+          <div class="ring-size-num" id="display-size-num">2.6</div>
+          <div class="ring-size-label">Standard Indian</div>
+        </div>
+        <div class="size-specs-box">
+          <div class="size-spec-row">
+            <span>Inner Diameter:</span>
+            <b id="spec-diameter">60.3 mm (2.375 in)</b>
+          </div>
+          <div class="size-spec-row">
+            <span>Inner Circumference:</span>
+            <b id="spec-circ">7.46 in (18.9 cm)</b>
+          </div>
+          <div class="size-spec-row">
+            <span>Best Suited For:</span>
+            <b id="spec-fit">Medium wrists / Standard adults</b>
+          </div>
+        </div>
+        <small style="color: var(--text-muted-light); font-size: 0.8rem;">
+          Pro Tip: When measuring for bangles, compress your thumb and little finger together as if sliding on a bangle!
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. BRIDAL RENTAL CONCIERGE -->
+<section id="bridal-concierge">
+  <div class="container">
+    <div class="concierge-card rv">
+      <div class="concierge-text">
+        <span class="eyebrow eyebrow-gold">Wedding &amp; Occasion Suite</span>
+        <h3>Look Royal on Your Big Day Without Gold Locker Stress.</h3>
+        <p>
+          Wedding jewellery can cost lakhs to buy, only to remain locked in bank lockers for years. Our premium bridal rental service provides full head-to-toe sets — crafted by traditional karigars with authentic antique matte, Kundan polki, and South Indian temple designs.
+        </p>
+        <div class="concierge-steps">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-info">
+              <strong>Select Your Wedding Function</strong>
+              <span>Muhurtham, Reception, Sangeet, Mehendi, or Haldi ceremony</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-info">
+              <strong>Try-on &amp; Match in Showroom</strong>
+              <span>Bring your bridal saree or lehenga for exact shade and stone pairing</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-info">
+              <strong>Hassle-Free Rental Pickup &amp; Return</strong>
+              <span>Cleaned, sanitised, velvet-boxed suites ready on your function date</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-gold" id="rental-book-btn" target="_blank" rel="noopener">
+          <span>Book Rental Consultation on WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="planner-box">
+        <h4><span>✦</span> Bridal Rental Custom Planner</h4>
+        <div class="planner-field">
+          <label>Occasion / Function</label>
+          <select class="planner-select" id="planner-occasion">
+            <option value="Wedding Muhurtham">Traditional Wedding Muhurtham (Heavy Gold Temple Set)</option>
+            <option value="Grand Reception">Grand Evening Reception (Kundan / American Diamond)</option>
+            <option value="Sangeet & Sangeet Dance">Sangeet &amp; Dance Night (Chic Polki &amp; Lightweight Sets)</option>
+            <option value="Haldi / Mehendi">Haldi &amp; Mehendi (Floral &amp; Traditional Yellow Gold)</option>
+            <option value="Baby Shower / Seemantham">Seemantham / Baby Shower (Vaddanam &amp; Temple Sets)</option>
+            <option value="Engagement / Ring Ceremony">Engagement Ceremony (Royal Choker &amp; Jhumka)</option>
+          </select>
+        </div>
+
+        <div class="planner-field">
+          <label>Jewellery Style</label>
+          <select class="planner-select" id="planner-style">
+            <option value="South Indian Antique Temple Gold">South Indian Antique Matte Temple Gold (Lakshmi / Peacock)</option>
+            <option value="Royal Jadau Kundan & Polki">Royal Jadau Kundan &amp; Polki with Emerald Drops</option>
+            <option value="American Diamond & White Gold Finish">American Diamond &amp; Rhodium White Gold Finish</option>
+            <option value="Contemporary Rose Gold & Pearls">Contemporary Rose Gold &amp; Pearl Drops</option>
+          </select>
+        </div>
+
+        <div class="planner-field">
+          <label>Include Accessories?</label>
+          <select class="planner-select" id="planner-acc">
+            <option value="Full Set (Choker, Haram, Vaddanam, Matha Patti, Jhumkas, Bangles, Hathphool)">Full Head-to-Toe Bridal Suite (7+ Pieces)</option>
+            <option value="Essential Set (Choker, Haram & Jhumkas)">Essential Set (Choker, Long Haram &amp; Jhumkas)</option>
+            <option value="Only Waist Belt (Vaddanam / Kamarbandh)">Only Waist Belt (Vaddanam / Kamarbandh)</option>
+            <option value="Only Bridal Chooriyan & Kada Set">Only Bridal Chooriyan &amp; Kada Set</option>
+          </select>
+        </div>
+
+        <div class="estimate-badge">
+          <small>Affordable Daily Rental Range</small>
+          <b id="estimate-price-range">₹800 – ₹3,500 / day</b>
+          <div style="font-size: 0.78rem; color: var(--text-muted-light); margin-top: 4px;">
+            *Minimal refundable security deposit required
+          </div>
+        </div>
+
+        <button class="btn btn-outline-gold" style="width: 100%;" id="update-plan-btn">
+          Lock In This Selection
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. SHOWCASE GRID (LIGHT CREAM BACKGROUND) -->
+<section id="showcase">
+  <div class="container">
+    <div class="showcase-header rv">
+      <span class="eyebrow eyebrow-wine">Showroom Highlights</span>
+      <h2 class="sec-title sec-title-dark">Artistry in Every Detail</h2>
+      <p class="sec-desc sec-desc-dark">
+        From micro gold-plated finishes guaranteed to retain their shine to heirloom Kundan craftsmanship, inspect the details that make Ramdev Bangles beloved across South Bengaluru.
+      </p>
+    </div>
+
+    <div class="showcase-grid">
+      <div class="showcase-card rv">
+        <div class="showcase-img">
+          <img src="https://images.unsplash.com/photo-1758995119744-6454f091303f?auto=format&fit=crop&w=800&q=80" alt="Gold Bangles Collection" loading="lazy">
+        </div>
+        <div class="showcase-content">
+          <h4>Micro Gold-Plated Bangles</h4>
+          <p>Long-lasting 24K yellow gold flash plating over high-grade brass alloy. Resistant to fading and perspiration for everyday elegance.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Daily Wear</span>
+            <span class="showcase-tag">Anti-Tarnish</span>
+            <span class="showcase-tag">Sizes 2.2 - 2.10</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card rv" style="--delay: 0.15s;">
+        <div class="showcase-img">
+          <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80" alt="Bridal Necklace Suite" loading="lazy">
+        </div>
+        <div class="showcase-content">
+          <h4>Royal Kundan &amp; Polki Chokers</h4>
+          <p>Hand-set uncut glass Kundan stones finished with fine meenakari work on reverse. Available for purchase and wedding rentals.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Bridal Suite</span>
+            <span class="showcase-tag">Rental Available</span>
+            <span class="showcase-tag">Meenakari Craft</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card rv" style="--delay: 0.3s;">
+        <div class="showcase-img">
+          <img src="https://images.unsplash.com/photo-1608042314453-ae338d80c427?auto=format&fit=crop&w=800&q=80" alt="South Indian Temple Jewellery" loading="lazy">
+        </div>
+        <div class="showcase-content">
+          <h4>South Indian Temple Harams</h4>
+          <p>Deep red Kemp stones and matte temple embossing capturing centuries of Dravidian craftsmanship for pujas and traditional nuptials.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Temple Matte</span>
+            <span class="showcase-tag">Kemp Stones</span>
+            <span class="showcase-tag">Muhurtham Wear</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. STATS SECTION -->
+<section id="stats">
+  <div class="container stats-grid">
+    <div class="stat-box rv">
+      <b data-target="2011" data-format="plain">0</b>
+      <span>Established Year</span>
+    </div>
+    <div class="stat-box rv" style="--delay: 0.1s;">
+      <b data-target="14" data-format="plus">0</b>
+      <span>Years in JP Nagar</span>
+    </div>
+    <div class="stat-box rv" style="--delay: 0.2s;">
+      <b data-target="8" data-format="plain">0</b>
+      <span>Dedicated Aisles</span>
+    </div>
+    <div class="stat-box rv" style="--delay: 0.3s;">
+      <b data-target="10000" data-format="kplus">0</b>
+      <span>Designs in Stock</span>
+    </div>
+  </div>
+</section>
+
+<!-- 9. REVIEWS SECTION (LIGHT PEARL CARDS) -->
+<section id="reviews">
+  <div class="container">
+    <div class="reviews-header rv">
+      <span class="eyebrow eyebrow-gold">Community Testimonials</span>
+      <h2 class="sec-title sec-title-light">Beloved by Families Across JP Nagar</h2>
+      <p class="sec-desc sec-desc-light">
+        Real reviews from local shoppers, brides, and mothers who trust Ramdev Bangles for every festival, wedding, and celebration.
+      </p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card rv">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-quote">
+            "I rented my entire wedding reception necklace and kada set from Ramdev Bangles. Nobody could tell it wasn't real gold! The owners are extremely patient and helped match the green beads perfectly to my Kanjeevaram border."
+          </div>
+        </div>
+        <div class="reviewer-profile">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Priya Sundaram" class="reviewer-avatar" loading="lazy">
+          <div class="reviewer-info">
+            <h5>Priya Sundaram</h5>
+            <span>JP Nagar 8th Phase • Bridal Rental</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card rv" style="--delay: 0.15s;">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-quote">
+            "The best shop near Big Bazaar for daily wear bangles! They have sizes that are impossible to find elsewhere like 2.2 and 2.10. The micro gold finish lasts for months without turning black even with hand washing."
+          </div>
+        </div>
+        <div class="reviewer-profile">
+          <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=150&q=80" alt="Sowmya Rajesh" class="reviewer-avatar" loading="lazy">
+          <div class="reviewer-info">
+            <h5>Sowmya Rajesh</h5>
+            <span>Kothanur Dinne • Regular Customer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card rv" style="--delay: 0.3s;">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-quote">
+            "We purchased bulk festival glass bangles and return gifts for our daughter's Navratri puja. Very reasonable wholesale pricing and superb packaging. Will always visit Ramdev first for family functions!"
+          </div>
+        </div>
+        <div class="reviewer-profile">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=150&q=80" alt="Ananya Sharma" class="reviewer-avatar" loading="lazy">
+          <div class="reviewer-info">
+            <h5>Ananya Sharma</h5>
+            <span>Arekere, Bannerghatta Rd • Festive Shopper</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. JEWELLERY CARE & FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="rv">
+        <span class="eyebrow eyebrow-gold">Expert Guidance</span>
+        <h2 class="sec-title sec-title-light">Frequently Asked Questions &amp; Care Tips</h2>
+        <p class="sec-desc sec-desc-light" style="margin-bottom: 26px;">
+          Have questions about bridal jewellery rentals, gold-plating longevity, or in-store try-ons? Here is everything you need to know before visiting.
+        </p>
+        <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid var(--gold-border); border-radius: var(--radius-md); padding: 24px;">
+          <h4 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--gold-light); margin-bottom: 8px;">✦ Bangle Maintenance Golden Rule</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted-light); line-height: 1.6;">
+            Always spray perfumes and apply moisturisers 10 minutes <em>before</em> putting on your gold-plated jewellery. Store each pair in a dry ziplock or velvet pouch to enjoy gleaming luster for years!
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-accordion rv" style="--delay: 0.2s;">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>How does the bridal jewellery rental process work?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            You can visit our JP Nagar store 1 to 2 weeks before your function date with your outfit to select matching sets. We block the pieces for your dates with a modest advance. Collect your set in velvet boxes on the day before the function, and return it within 24-48 hours after your event. Minimal security deposit is fully refunded upon return.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does the micro gold plating last on daily bangles?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Our 1 Gram and micro gold-plated bangles feature durable protective lacquer coats. For daily use, they comfortably maintain their rich gold sheen for 6 to 18 months depending on water exposure. For occasion wear, they can easily last 3 to 5 years when stored away from moisture and perfumes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you have uncommon bangle sizes like 2.2 and 2.10?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes! Unlike standard high-street counters that only keep 2.4 and 2.6, Ramdev Bangles stocks complete size runs from size 2.2 (for slender wrists and teenagers) up to 2.10 (extra-broad wrists), including openable screw-type kadas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you supply bulk bangles for Mehendi and Haldi giveaways?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Absolutely! We supply thousands of glass bangles, silk thread chooriyan, and designer return-gift sets for wedding functions, Navratri Golu, and college festivals at wholesale bundle rates. Call or message us 3-5 days in advance for large colour assortments.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. STORE VISIT & LOCATION -->
+<section id="visit">
+  <div class="container">
+    <div class="visit-grid">
+      <div class="visit-info-card rv">
+        <span class="eyebrow eyebrow-wine">Convenient Location</span>
+        <h3>Visit Our JP Nagar Showroom</h3>
+        <ul class="store-details-list">
+          <li>
+            <div class="detail-icon">📍</div>
+            <div class="detail-text">
+              <strong>Store Address</strong>
+              <span>Shop No. 62/5, Gaurav Nagar, Kothanur Dinne Main Road, JP Nagar 7th Phase, Bengaluru, Karnataka 560078</span>
+            </div>
+          </li>
+          <li>
+            <div class="detail-icon">🏛️</div>
+            <div class="detail-text">
+              <strong>Prominent Landmark</strong>
+              <span>Near Big Bazaar / Dr. Vivekananda Layout</span>
+            </div>
+          </li>
+          <li>
+            <div class="detail-icon">⏰</div>
+            <div class="detail-text">
+              <strong>Showroom Hours</strong>
+              <span>Monday – Saturday: 9:30 AM – 9:00 PM<br>Sunday: 10:00 AM – 8:30 PM</span>
+            </div>
+          </li>
+          <li>
+            <div class="detail-icon">🛍️</div>
+            <div class="detail-text">
+              <strong>Services Available</strong>
+              <span>In-Store Shopping • Bridal Rental Trial • Same-Day Local Delivery</span>
+            </div>
+          </li>
+        </ul>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="#" class="btn btn-gold" data-dir target="_blank" rel="noopener">Get GPS Directions</a>
+          <a href="#" class="btn btn-wine" data-call>Call Store Manager</a>
+        </div>
+      </div>
+
+      <div class="map-embed-wrapper rv" style="--delay: 0.2s;">
+        <iframe 
+          title="Ramdev Bangles &amp; Imitation Jewellery Location"
+          src="https://maps.google.com/maps?q=Shop+No+62%2F5+Gaurav+Nagar+Kothanur+Dinne+Main+Road+JP+Nagar+7th+Phase+Bengaluru+560078&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CONTACT SECTION -->
+<section id="contact">
+  <div class="container rv">
+    <span class="eyebrow eyebrow-gold">Direct Connect</span>
+    <h2 class="sec-title sec-title-light">Looking for a Specific Design or Size?</h2>
+    <p class="sec-desc sec-desc-light" style="margin: 0 auto;">
+      Call the showroom directly or send us a WhatsApp photo of your outfit. Our team will verify size availability, rental dates, or stock in minutes.
+    </p>
+    <a href="#" class="contact-phone-display" data-call id="main-phone-text">+91 95350 87945</a>
+    <div class="contact-actions">
+      <a href="#" class="btn btn-gold" data-call>Call Now: +91 95350 87945</a>
+      <a href="#" class="btn btn-outline-gold" data-wa target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a href="#" class="btn btn-wine" data-dir target="_blank" rel="noopener">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">Ramdev Bangles &amp; Imitation Jewellery</div>
+    <p>Shop No. 62/5, Gaurav Nagar, Kothanur Dinne Main Road, JP Nagar 7th Phase, Bengaluru, Karnataka 560078</p>
+    <p style="margin-top: 10px; font-size: 0.8rem; color: rgba(232, 208, 201, 0.6);">
+      © 2011 – 2026 Ramdev Bangles. All rights reserved. Trusted by over 10,000+ South Bengaluru families.
+    </p>
+  </div>
+</footer>
+
+<!-- FLOATING QUICK ACTIONS -->
+<div class="floating-bar">
+  <a href="#" class="float-btn float-call" data-call title="Call Store Direct">📞</a>
+  <a href="#" class="float-btn float-wa" data-wa target="_blank" rel="noopener" title="Chat on WhatsApp">💬</a>
+</div>
+
+<!-- FULLSCREEN LIGHTBOX MODAL -->
+<div class="lightbox-modal" id="lightbox-modal">
+  <div class="lightbox-content">
+    <div class="lightbox-img-wrap">
+      <img id="modal-img" src="" alt="Aisle Zoom View">
+    </div>
+    <div class="lightbox-body">
+      <span class="eyebrow eyebrow-wine" id="modal-tag">Aisle Detail</span>
+      <h3 id="modal-title">Aisle Name</h3>
+      <p id="modal-desc">Description of aisle jewellery pieces.</p>
+      <div class="lightbox-actions">
+        <button class="btn btn-wine" id="modal-close-btn">Close</button>
+        <a href="#" class="btn btn-gold" id="modal-wa-btn" target="_blank" rel="noopener">Enquire via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ========================================================
+   STORE DATA & CONFIGURATION
+   ======================================================== */
+const STORE_CONFIG = {
+  phoneDisplay: "+91 95350 87945",
+  phoneDigits: "919535087945",
+  alternatePhone: "+91 76760 74273",
+  mapDestination: "Ramdev Bangles and Imitation Jewellery, Shop 62/5 Gaurav Nagar, Kothanur Dinne Main Road, JP Nagar 7th Phase, Bengaluru 560078"
+};
+
+/* 8 Aisles with 100% Real, Fresh, Non-Overlapping Photography */
+const AISLES_DATA = [
+  {
+    id: 1,
+    title: "Micro Gold-Plated Bangles",
+    category: "bangles",
+    tag: "Aisle 01 • Bestseller",
+    categoryLabel: "Bangles & Kadas",
+    photo: "https://images.unsplash.com/photo-1758995116383-f51775896add?auto=format&fit=crop&w=800&q=80",
+    desc: "Handcrafted 1 Gram micro gold-plated daily-wear bangles with anti-tarnish protective lacquer. Available in plain, carved, and stone-studded finishes by the pair or 4-piece set.",
+    highlight: "Sizes 2.2 to 2.10 Available"
+  },
+  {
+    id: 2,
+    title: "Festive & Wedding Glass Chooriyan",
+    category: "bangles",
+    tag: "Aisle 02 • Traditional",
+    categoryLabel: "Bangles & Kadas",
+    photo: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    desc: "Thousands of shimmering glass bangles in authentic bridal reds, auspicious greens, festive yellows, and metallic gold. Custom color-matched directly to your saree pallu.",
+    highlight: "Bulk Wedding Bundles"
+  },
+  {
+    id: 3,
+    title: "Temple Kadas & Openable Cuffs",
+    category: "bangles",
+    tag: "Aisle 03 • Statement",
+    categoryLabel: "Bangles & Kadas",
+    photo: "https://images.unsplash.com/photo-1770399821052-78e8244290d3?auto=format&fit=crop&w=800&q=80",
+    desc: "Heavy antique matte cuffs featuring intricate peacock, floral, and Lakshmi embossing. Fitted with premium screw-open hinges for effortless wearing on any wrist size.",
+    highlight: "Screw-Open Hinges"
+  },
+  {
+    id: 4,
+    title: "Bridal Jewellery Suites on Rent",
+    category: "bridal",
+    tag: "Aisle 04 • Rental Suite",
+    categoryLabel: "Bridal Rentals",
+    photo: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80",
+    desc: "Complete royal bridal sets available on rent: chokers, long harams, waist belts (vaddanam), matha patti, and jhumkas. Sanitised and presented in luxury velvet keepsake boxes.",
+    highlight: "₹800 - ₹3500/day Rental"
+  },
+  {
+    id: 5,
+    title: "Kundan & Antique Chokers",
+    category: "necklaces",
+    tag: "Aisle 05 • Royal Necklaces",
+    categoryLabel: "Necklaces & Chokers",
+    photo: "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=800&q=80",
+    desc: "Regal Jadau Kundan and Polki choker sets adorned with uncut crystal stones, emerald bead drops, and matching chandelier earrings for weddings and cocktail evenings.",
+    highlight: "Includes Matching Earrings"
+  },
+  {
+    id: 6,
+    title: "South Indian Jhumkas & Chandbalis",
+    category: "accessories",
+    tag: "Aisle 06 • Ear Shringar",
+    categoryLabel: "Earrings & Shringar",
+    photo: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=800&q=80",
+    desc: "Over 500 styles of traditional Kemp stone jhumkas, multi-tier chandbalis, lightweight studs, and delicate drop earrings suited for Bharatanatyam, pujas, and college festivals.",
+    highlight: "Lightweight Comfort Backing"
+  },
+  {
+    id: 7,
+    title: "Maang Tikka, Matha Patti & Hair Shringar",
+    category: "accessories",
+    tag: "Aisle 07 • Bridal Hair",
+    categoryLabel: "Earrings & Shringar",
+    photo: "https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?auto=format&fit=crop&w=800&q=80",
+    desc: "Exquisite Rajasthani borlas, layered matha pattis, passa side-ornaments, and floral hair pins designed to secure comfortably into bridal hairdos and silk saree pleats.",
+    highlight: "Hair-Friendly Clips"
+  },
+  {
+    id: 8,
+    title: "Silver Payal, Anklets & Toe Rings",
+    category: "accessories",
+    tag: "Aisle 08 • Foot Ornaments",
+    categoryLabel: "Earrings & Shringar",
+    photo: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=80",
+    desc: "Finely engraved silver-finish ghungroo payals, dual-tone sleek daily anklets, and adjustable traditional bichiya (toe rings) crafted to prevent tarnishing.",
+    highlight: "Musical Ghungroo Bells"
+  }
+];
+
+/* Bangle Size Specifications Database */
+const BANGLE_SIZES = {
+  "2-2": { num: "2.2", diameter: "54.0 mm (2.125 in)", circ: "6.67 in (17.0 cm)", fit: "Petite wrists / Teenagers", min: 5.2, max: 5.6 },
+  "2-4": { num: "2.4", diameter: "57.2 mm (2.250 in)", circ: "7.06 in (17.9 cm)", fit: "Small adult wrists", min: 5.61, max: 6.0 },
+  "2-6": { num: "2.6", diameter: "60.3 mm (2.375 in)", circ: "7.46 in (18.9 cm)", fit: "Medium wrists (Most common)", min: 6.01, max: 6.5 },
+  "2-8": { num: "2.8", diameter: "63.5 mm (2.500 in)", circ: "7.85 in (19.9 cm)", fit: "Broad wrists / Comfort fit", min: 6.51, max: 6.9 },
+  "2-10": { num: "2.10", diameter: "66.7 mm (2.625 in)", circ: "8.25 in (21.0 cm)", fit: "Extra-broad wrists / Plus size", min: 6.91, max: 7.3 }
+};
+
+/* ========================================================
+   DOM INITIALIZATION
+   ======================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Populate Phone, WhatsApp and Maps Links
+  document.querySelectorAll('[data-call]').forEach(el => {
+    el.href = `tel:+${STORE_CONFIG.phoneDigits}`;
+  });
+  
+  document.querySelectorAll('[data-wa]').forEach(el => {
+    const defaultMsg = encodeURIComponent("Hello Ramdev Bangles! I am inquiring about jewellery designs and bangles at your JP Nagar showroom.");
+    el.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${defaultMsg}`;
+  });
+
+  document.querySelectorAll('[data-dir]').forEach(el => {
+    el.href = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(STORE_CONFIG.mapDestination)}`;
+  });
+
+  // 2. Render 8 Aisles Grid
+  renderAisles('all');
+
+  // 3. Category Filter Tabs
+  const filterBtns = document.querySelectorAll('.tab-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderAisles(btn.dataset.filter);
+    });
+  });
+
+  // 4. Interactive Bangle Sizer
+  initBangleSizer();
+
+  // 5. Bridal Planner WhatsApp Generator
+  initBridalPlanner();
+
+  // 6. Accordion Functionality
+  initAccordion();
+
+  // 7. Scroll Bar & Sticky Nav
+  initScrollEffects();
+
+  // 8. Stats Counter on Scroll
+  initStatsCounter();
+
+  // 9. Floating Golden Dust Particles in Hero
+  initGoldenSparks();
+});
+
+/* Render Aisles Function */
+function renderAisles(filter) {
+  const container = document.getElementById('aisles-grid-container');
+  const filtered = filter === 'all' ? AISLES_DATA : AISLES_DATA.filter(a => a.category === filter);
+  
+  container.innerHTML = filtered.map((aisle, idx) => `
+    <div class="aisle-card rv in" data-id="${aisle.id}" style="--delay: ${(idx % 4) * 0.1}s;">
+      <div class="aisle-img-wrap">
+        <img src="${aisle.photo}" alt="${aisle.title}" loading="lazy">
+        <span class="aisle-tag-badge">${aisle.tag}</span>
+        <div class="aisle-overlay"></div>
+        <div class="zoom-hint">🔍</div>
+      </div>
+      <div class="aisle-content">
+        <div>
+          <h3>${aisle.title}</h3>
+          <p>${aisle.desc}</p>
+        </div>
+        <div class="aisle-card-footer">
+          <span class="aisle-footer-tag">${aisle.highlight}</span>
+          <span class="aisle-btn-link">View Details →</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // Attach Lightbox Modal click listeners
+  container.querySelectorAll('.aisle-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const aisleId = parseInt(card.dataset.id, 10);
+      const data = AISLES_DATA.find(a => a.id === aisleId);
+      if (data) openLightbox(data);
+    });
+  });
+}
+
+/* Lightbox Functions */
+const modal = document.getElementById('lightbox-modal');
+const modalImg = document.getElementById('modal-img');
+const modalTag = document.getElementById('modal-tag');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalWaBtn = document.getElementById('modal-wa-btn');
+const modalCloseBtn = document.getElementById('modal-close-btn');
+
+function openLightbox(item) {
+  modalImg.src = item.photo;
+  modalTag.textContent = item.tag;
+  modalTitle.textContent = item.title;
+  modalDesc.textContent = item.desc;
+  
+  const waMsg = encodeURIComponent(`Hi Ramdev Bangles! I would like to inquire about "${item.title}" (${item.highlight}) from your JP Nagar showroom.`);
+  modalWaBtn.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${waMsg}`;
+  
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+modalCloseBtn.addEventListener('click', closeLightbox);
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('active')) closeLightbox();
+});
+
+/* Interactive Bangle Sizer Implementation */
+function initBangleSizer() {
+  const slider = document.getElementById('wrist-slider');
+  const circumBadge = document.getElementById('circumference-badge');
+  const sizeNumDisplay = document.getElementById('display-size-num');
+  const sizeBtnText = document.getElementById('size-btn-text');
+  const diameterSpec = document.getElementById('spec-diameter');
+  const circSpec = document.getElementById('spec-circ');
+  const fitSpec = document.getElementById('spec-fit');
+  const waBtn = document.getElementById('sizer-wa-btn');
+  const chips = document.querySelectorAll('.size-chip');
+  const ring = document.getElementById('bangle-ring');
+
+  function updateSize(key) {
+    const s = BANGLE_SIZES[key];
+    if (!s) return;
+
+    sizeNumDisplay.textContent = s.num;
+    sizeBtnText.textContent = s.num;
+    diameterSpec.textContent = s.diameter;
+    circSpec.textContent = s.circ;
+    fitSpec.textContent = s.fit;
+
+    // Update chips state
+    chips.forEach(c => {
+      c.classList.toggle('active', c.dataset.size === key);
+    });
+
+    // Update WhatsApp link
+    const msg = encodeURIComponent(`Hello Ramdev Bangles! I used your online Bangle Size Finder and need bangles in Size ${s.num} (${s.fit}). What designs do you have in stock in JP Nagar?`);
+    waBtn.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${msg}`;
+
+    // Visual Ring Pulse Effect
+    ring.style.transform = 'scale(1.08)';
+    setTimeout(() => { ring.style.transform = 'scale(1)'; }, 250);
+  }
+
+  slider.addEventListener('input', (e) => {
+    const val = parseFloat(e.target.value);
+    const cmVal = (val * 2.54).toFixed(1);
+    circumBadge.textContent = `${val.toFixed(1)} inches (${cmVal} cm)`;
+
+    // Find matching size
+    for (const [key, item] of Object.entries(BANGLE_SIZES)) {
+      if (val >= item.min && val <= item.max) {
+        updateSize(key);
+        break;
+      }
+    }
+  });
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const key = chip.dataset.size;
+      const s = BANGLE_SIZES[key];
+      if (s) {
+        const midVal = (s.min + s.max) / 2;
+        slider.value = midVal;
+        const cmVal = (midVal * 2.54).toFixed(1);
+        circumBadge.textContent = `${midVal.toFixed(1)} inches (${cmVal} cm)`;
+        updateSize(key);
+      }
+    });
+  });
+
+  // Default Init
+  updateSize('2-6');
+}
+
+/* Bridal Rental Custom Planner */
+function initBridalPlanner() {
+  const occasionSelect = document.getElementById('planner-occasion');
+  const styleSelect = document.getElementById('planner-style');
+  const accSelect = document.getElementById('planner-acc');
+  const bookBtn = document.getElementById('rental-book-btn');
+  const lockBtn = document.getElementById('update-plan-btn');
+  const priceDisplay = document.getElementById('estimate-price-range');
+
+  function updatePlan() {
+    const occ = occasionSelect.value;
+    const style = styleSelect.value;
+    const acc = accSelect.value;
+
+    let price = "₹1,200 – ₹3,500 / day";
+    if (acc.includes('Only Waist Belt') || acc.includes('Only Bridal Chooriyan')) {
+      price = "₹500 – ₹1,200 / day";
+    } else if (acc.includes('Full Head-to-Toe')) {
+      price = "₹2,000 – ₹4,500 / day";
+    }
+    priceDisplay.textContent = price;
+
+    const msg = encodeURIComponent(`Hi Ramdev Bangles! I would like to book a bridal jewellery rental consultation for:
+- Occasion: ${occ}
+- Preferred Style: ${style}
+- Package: ${acc}
+- Estimated Rental Range: ${price}
+Please let me know available slots to visit the JP Nagar showroom!`);
+
+    bookBtn.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${msg}`;
+  }
+
+  occasionSelect.addEventListener('change', updatePlan);
+  styleSelect.addEventListener('change', updatePlan);
+  accSelect.addEventListener('change', updatePlan);
+  lockBtn.addEventListener('click', () => {
+    updatePlan();
+    bookBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    bookBtn.style.transform = 'scale(1.08)';
+    setTimeout(() => { bookBtn.style.transform = 'scale(1)'; }, 400);
+  });
+
+  updatePlan();
+}
+
+/* Accordion Component */
+function initAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      faqItems.forEach(f => f.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+}
+
+/* Scroll Effects: Progress Bar, Navbar & Scroll Reveals */
+function initScrollEffects() {
+  const bar = document.getElementById('scroll-bar');
+  const nav = document.getElementById('navbar');
+  const revealElements = document.querySelectorAll('.rv');
+
+  window.addEventListener('scroll', () => {
+    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    bar.style.width = scrolled + '%';
+
+    if (winScroll > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealElements.forEach(el => observer.observe(el));
+}
+
+/* Numeric Stats Counter Animation */
+function initStatsCounter() {
+  const statsSection = document.getElementById('stats');
+  let animated = false;
+
+  const countUp = (el) => {
+    const target = parseInt(el.dataset.target, 10);
+    const format = el.dataset.format;
+    const duration = 2000;
+    const start = performance.now();
+
+    const frame = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(target * easeProgress);
+
+      if (format === 'plain') {
+        el.textContent = current;
+      } else if (format === 'plus') {
+        el.textContent = current + '+';
+      } else if (format === 'kplus') {
+        el.textContent = (current >= 1000 ? Math.floor(current / 1000) + 'K+' : current + '+');
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(frame);
+      }
+    };
+    requestAnimationFrame(frame);
+  };
+
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        statsSection.querySelectorAll('[data-target]').forEach(countUp);
+        statObserver.unobserve(statsSection);
+      }
+    });
+  }, { threshold: 0.25 });
+
+  statObserver.observe(statsSection);
+}
+
+/* Floating Golden Dust in Hero */
+function initGoldenSparks() {
+  const hero = document.getElementById('hero');
+  const count = 28;
+  for (let i = 0; i < count; i++) {
+    const spark = document.createElement('div');
+    spark.className = 'sparkle';
+    spark.style.left = `${Math.random() * 100}%`;
+    spark.style.bottom = `${Math.random() * 10}px`;
+    spark.style.animationDuration = `${6 + Math.random() * 10}s`;
+    spark.style.animationDelay = `${Math.random() * 8}s`;
+    const size = 3 + Math.random() * 4;
+    spark.style.width = `${size}px`;
+    spark.style.height = `${size}px`;
+    hero.appendChild(spark);
+  }
+}
+</script>
+</body>
+</html>
